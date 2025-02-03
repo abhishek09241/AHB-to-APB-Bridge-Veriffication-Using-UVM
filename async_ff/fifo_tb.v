@@ -82,7 +82,7 @@ initial begin
     end
     
      initial begin
-        #200;     // Ensure data has been written before reading
+        #500;     // Ensure data has been written before reading
         repeat(17) begin
             @(posedge rclk);
             if (!rempty) begin
